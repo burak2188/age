@@ -1,0 +1,26 @@
+import javax.swing.*;
+import java.util.Scanner;
+import java.util.Calendar;
+
+
+public class GeminiAufgabe {
+
+    public static void main(String[] args) {
+
+        new Scanner(System.in);
+
+        String input = JOptionPane.showInputDialog("gebe hier dein Namen ein : ");
+        String input1 = JOptionPane.showInputDialog("gebe hier das aktuelle Datum ein: ");
+        String input2 = JOptionPane.showInputDialog("gebe hier dein Geburtsjahr ein: ");
+
+        int zahl = Integer.parseInt(input1);
+        int zahl1 = Integer.parseInt(input2);
+        int summe = zahl - zahl1;
+
+        JOptionPane.showMessageDialog(null, input + " dein alter beträgt : " + summe);
+
+        System.out.println(input + "\n" + input1 + "\n" + input2 +"\n");
+        System.out.println(input + " dein alter beträgt : " + summe);
+
+    }
+}
